@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fazli Shafiq Zulfakar | #1 Automation Engineering Portfolio</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        rbalt: {
+                            navy: '#08101E',
+                            dark: '#0B172A',
+                            card: '#132238',
+                            red: '#DC0000',
+                            gold: '#FFCC00',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Lucide Icons & Google Fonts -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .slanted-badge {
+            clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+        }
+    </style>
+</head>
+<body class="bg-rbalt-navy text-slate-100 antialiased selection:bg-rbalt-red selection:text-white">
+
+    <!-- NAVIGATION BAR -->
+    <header class="sticky top-0 z-50 bg-rbalt-navy/90 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Brand / Initial with #1 Racing Badge -->
+                <a href="#hero" class="flex items-center gap-3 group">
+                    <div class="relative w-11 h-11 bg-rbalt-red text-white font-black flex items-center justify-center text-xl shadow-lg transform -skew-x-6 group-hover:scale-105 transition">
+                        <span class="transform skew-x-6">#1</span>
+                    </div>
+                    <div>
+                        <span class="font-extrabold text-white tracking-wide text-lg block leading-none">FAZLI SHAFIQ Z.</span>
+                        <span class="text-xs text-rbalt-gold font-semibold uppercase tracking-wider">Automation #1</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-300">
+                    <a href="#about" class="hover:text-rbalt-gold transition">About</a>
+                    <a href="#skills" class="hover:text-rbalt-gold transition">Skills</a>
+                    <a href="#projects" class="hover:text-rbalt-gold transition">Projects</a>
+                    <a href="#experience" class="hover:text-rbalt-gold transition">Experience</a>
+                    <a href="#contact" class="hover:text-rbalt-gold transition">Contact</a>
+                </nav>
+
+                <!-- Status Badge -->
+                <div class="hidden sm:flex items-center gap-2 bg-rbalt-dark border border-slate-700/80 px-3.5 py-1.5 rounded-full text-xs font-bold text-rbalt-gold shadow-inner">
+                    <span class="w-2.5 h-2.5 rounded-full bg-rbalt-red animate-ping"></span>
+                    Sem 1 - Open for Collaboration
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-300 hover:text-white">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobile-menu" class="hidden md:hidden border-b border-slate-800 bg-rbalt-dark px-6 py-4 space-y-3 text-sm font-semibold">
+            <a href="#about" class="block text-slate-300 hover:text-rbalt-gold py-1">About</a>
+            <a href="#skills" class="block text-slate-300 hover:text-rbalt-gold py-1">Skills</a>
+            <a href="#projects" class="block text-slate-300 hover:text-rbalt-gold py-1">Projects</a>
+            <a href="#experience" class="block text-slate-300 hover:text-rbalt-gold py-1">Experience</a>
+            <a href="#contact" class="block text-slate-300 hover:text-rbalt-gold py-1">Contact</a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="py-24 md:py-32 bg-rbalt-navy relative overflow-hidden">
+        <div class="absolute -right-20 -top-20 w-96 h-96 bg-rbalt-red/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute right-1/3 bottom-0 w-80 h-80 bg-rbalt-gold/5 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+                
+                <div class="md:col-span-8 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded bg-rbalt-red/20 text-rbalt-red border border-rbalt-red/40 text-xs font-black uppercase tracking-widest">
+                        <i data-lucide="zap" class="w-3.5 h-3.5 text-rbalt-gold"></i>
+                        Teknik Otomasi & Kontrol UGM
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-5xl md:text-6xl font-black text-white uppercase tracking-tight leading-none">
+                        Precision Engineering & <span class="text-transparent bg-clip-text bg-gradient-to-r from-rbalt-red to-rbalt-gold">High-Performance</span> Solutions
+                    </h1>
+                    
+                    <p class="text-base sm:text-lg text-slate-300 font-normal leading-relaxed max-w-2xl">
+                        Halo, saya <strong class="text-white">Fazli Shafiq Zulfakar</strong>. Mahasiswa semester 1 yang berfokus pada perancangan sistem kendali otomasi, pemrograman mikrokontroler, pneumatik, dan sistem kelistrikan berstandar presisi tinggi.
+                    </p>
+
+                    <!-- Stat Cards -->
+                    <div class="grid grid-cols-3 gap-4 pt-2 max-w-lg">
+                        <div class="bg-rbalt-dark p-4 rounded-xl border border-slate-800 shadow-xl">
+                            <div class="text-2xl font-black text-rbalt-gold">Sem 1</div>
+                            <div class="text-xs text-slate-400 font-medium mt-0.5">Tingkat Studi</div>
+                        </div>
+                        <div class="bg-rbalt-dark p-4 rounded-xl border border-slate-800 shadow-xl">
+                            <div class="text-2xl font-black text-rbalt-red">4+</div>
+                            <div class="text-xs text-slate-400 font-medium mt-0.5">Proyek Nyata</div>
+                        </div>
+                        <div class="bg-rbalt-dark p-4 rounded-xl border border-slate-800 shadow-xl">
+                            <div class="text-2xl font-black text-white">0.00</div>
+                            <div class="text-xs text-slate-400 font-medium mt-0.5">IPK (In Progress)</div>
+                        </div>
+                    </div>
+
+                    <!-- Call to Action -->
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <a href="#projects" class="inline-flex items-center gap-2 bg-rbalt-red hover:bg-red-700 text-white font-extrabold px-7 py-3.5 rounded-lg shadow-lg shadow-rbalt-red/30 transition transform hover:-translate-y-0.5">
+                            <i data-lucide="cpu" class="w-4 h-4"></i>
+                            Lihat Portofolio
+                        </a>
+                        <a href="#contact" class="inline-flex items-center gap-2 bg-rbalt-dark hover:bg-slate-800 text-slate-200 border border-slate-700 font-bold px-7 py-3.5 rounded-lg transition">
+                            <i data-lucide="mail" class="w-4 h-4 text-rbalt-gold"></i>
+                            Hubungi Saya
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Driver Card Profile / Avatar -->
+                <div class="md:col-span-4 flex justify-center">
+                    <div class="relative w-64 h-72 sm:w-72 sm:h-80 rounded-2xl bg-gradient-to-b from-rbalt-card to-rbalt-dark p-1 border-2 border-rbalt-red shadow-2xl">
+                        <div class="absolute -top-4 -right-4 w-12 h-12 bg-rbalt-gold text-rbalt-navy font-black flex items-center justify-center text-xl rounded-lg shadow-lg transform rotate-12">
+                            #1
+                        </div>
+                        <div class="w-full h-full bg-rbalt-navy rounded-xl flex flex-col items-center justify-center p-6 text-center">
+                            <div class="w-24 h-24 rounded-xl bg-rbalt-red/20 text-rbalt-red border border-rbalt-red/40 flex items-center justify-center text-3xl font-black mb-4">
+                                FSZ
+                            </div>
+                            <h3 class="font-extrabold text-white text-lg">Fazli Shafiq Z.</h3>
+                            <p class="text-xs text-rbalt-gold font-semibold mt-1">Automation Engineer #1</p>
+                            <span class="mt-4 px-3 py-1 bg-rbalt-dark border border-slate-700 rounded text-xs text-slate-300 font-mono">
+                                UGM Yogyakarta
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section id="about" class="py-20 bg-rbalt-dark border-t border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center gap-2 text-rbalt-gold font-bold text-xs uppercase tracking-widest mb-2">
+                    <i data-lucide="terminal" class="w-4 h-4"></i> About Me
+                </div>
+                <h2 class="text-3xl font-black text-white uppercase tracking-tight mb-6">Didorong oleh Semangat Ketepatan & Kualitas</h2>
+                
+                <div class="space-y-4 text-slate-300 leading-relaxed text-base">
+                    <p>
+                        Saya adalah mahasiswa tingkat pertama program studi <strong class="text-white">Teknik Otomasi & Kontrol</strong> di Universitas Gadjah Mada (UGM). Saya memiliki ketertarikan penuh pada sistem kendali industri, perancangan perangkat keras (hardware), serta integrasi logika pemrograman.
+                    </p>
+                    <p>
+                        Dengan prinsip kerja yang disiplin, teliti, dan berorientasi pada performa terbaik (*driven by excellence*), saya terus mengasah kemampuan di bidang pemrograman C++, PLC Omron (CX-Programmer), pneumatik, serta sistem kelistrikan dasar untuk menciptakan solusi otomasi yang handal.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="py-20 bg-rbalt-navy border-t border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-12">
+                <div class="inline-flex items-center gap-2 text-rbalt-gold font-bold text-xs uppercase tracking-widest mb-2">
+                    <i data-lucide="layers" class="w-4 h-4"></i> Capabilities
+                </div>
+                <h2 class="text-3xl font-black text-white uppercase tracking-tight">Keahlian & Kompetensi</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Otomasi & PLC -->
+                <div class="bg-rbalt-dark p-6 rounded-xl border border-slate-800 hover:border-rbalt-red transition">
+                    <div class="w-10 h-10 rounded-lg bg-rbalt-red/20 text-rbalt-red flex items-center justify-center mb-4 font-bold">
+                        <i data-lucide="cpu" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="font-bold text-white text-lg mb-4">Otomasi & Kontrol</h3>
+                    <ul class="space-y-3 text-sm text-slate-300">
+                        <li class="flex items-center justify-between border-b border-slate-800 pb-2">
+                            <span>Otomasi Industri</span>
+                            <span class="text-xs bg-rbalt-navy text-rbalt-gold px-2 py-0.5 rounded font-mono">Dasar</span>
+                        </li>
+                        <li class="flex items-center justify-between border-b border-slate-800 pb-2">
+                            <span>CX-Programmer (PLC Omron)</span>
+                            <span class="text-xs bg-rbalt-navy text-rbalt-gold px-2 py-0.5 rounded font-mono">Ladder Diagram</span>
+                        </li>
+                        <li class="flex items-center justify-between">
+                            <span>Sistem Pneumatik</span>
+                            <span class="text-xs bg-rbalt-navy text-rbalt-gold px-2 py-0.5 rounded font-mono">Praktik</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Hardware & Software -->
+                <div class="bg-rbalt-dark p-6 rounded-xl border border-slate-800 hover:border-rbalt-red transition">
+                    <div class="w-10 h-10 rounded-lg bg-rbalt-gold/20 text-rbalt-gold flex items-center justify-center mb-4 font-bold">
+                        <i data-lucide="circuit-board" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="font-bold text-white text-lg mb-4">Hardware & Software</h3>
+                    <ul class="space-y-3 text-sm text-slate-300">
+                        <li class="flex items-center justify-between border-b border-slate-800 pb-2">
+                            <span>Arduino Uno</span>
+                            <span class="text-xs bg-rbalt-navy text-rbalt-gold px-2 py-0.5 rounded font-mono">Mikrokontroler</span>
+                        </li>
+                        <li class="flex items-center justify-between border-b border-slate-800 pb-2">
+                            <span>Bahasa C++</span>
+                            <span class="text-xs bg-rbalt-navy text-rbalt-gold px-2 py-0.5 rounded font-mono">Pemrograman</span>
+                        </li>
+                        <li class="flex items-center justify-between">
+                            <span>Kelistrikan & PCB</span>
+                            <span class="text-xs bg-rbalt-navy text-rbalt-gold px-2 py-0.5 rounded font-mono">Soldering</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="bg-rbalt-dark p-6 rounded-xl border border-slate-800 hover:border-rbalt-red transition md:col-span-2 lg:col-span-1">
+                    <div class="w-10 h-10 rounded-lg bg-blue-500/20 text-blue-400 flex items-center justify-center mb-4 font-bold">
+                        <i data-lucide="users" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="font-bold text-white text-lg mb-4">Soft Skills</h3>
+                    <div class="space-y-3 text-sm text-slate-300">
+                        <div class="p-2.5 bg-rbalt-navy rounded border border-slate-800">
+                            <span class="font-bold text-white block">Teamwork</span>
+                            <span class="text-xs text-slate-400">Kolaborasi aktif dalam tim teknis.</span>
+                        </div>
+                        <div class="p-2.5 bg-rbalt-navy rounded border border-slate-800">
+                            <span class="font-bold text-white block">Problem Solving</span>
+                            <span class="text-xs text-slate-400">Analisis cepat dalam troubleshooting sistem.</span>
+                        </div>
+                        <div class="p-2.5 bg-rbalt-navy rounded border border-slate-800">
+                            <span class="font-bold text-white block">Komunikasi Efektif</span>
+                            <span class="text-xs text-slate-400">Penyampaian gagasan secara lugas.</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="py-20 bg-rbalt-dark border-t border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-12">
+                <div class="inline-flex items-center gap-2 text-rbalt-gold font-bold text-xs uppercase tracking-widest mb-2">
+                    <i data-lucide="folder-git-2" class="w-4 h-4"></i> Portfolio
+                </div>
+                <h2 class="text-3xl font-black text-white uppercase tracking-tight">Proyek & Karya Nyata</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <!-- Project 1 -->
+                <div class="bg-rbalt-navy rounded-xl border border-slate-800 p-6 flex flex-col justify-between hover:border-rbalt-red transition">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-xs font-black px-2.5 py-1 bg-rbalt-red text-white uppercase tracking-wider rounded">2023</span>
+                            <i data-lucide="flame" class="w-5 h-5 text-rbalt-gold"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Mobil Pemadam Kebakaran Kecil</h3>
+                        <p class="text-sm text-slate-300 mb-4 leading-relaxed">
+                            Prototipe kendaraan pemadam api otomatis berukuran ringkas yang dilengkapi sensor pendeteksi titik api dan sistem aktuator pemadam mandiri.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs bg-rbalt-dark text-slate-300 px-2.5 py-1 rounded border border-slate-700">Robotika</span>
+                            <span class="text-xs bg-rbalt-dark text-slate-300 px-2.5 py-1 rounded border border-slate-700">Sensor Api</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-rbalt-navy rounded-xl border border-slate-800 p-6 flex flex-col justify-between hover:border-rbalt-red transition">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-xs font-black px-2.5 py-1 bg-rbalt-red text-white uppercase tracking-wider rounded">Otomasi</span>
+                            <i data-lucide="sliders" class="w-5 h-5 text-rbalt-gold"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Program Otomasi 4 Alat</h3>
+                        <p class="text-sm text-slate-300 mb-4 leading-relaxed">
+                            Perancangan program logika sekuensial terintegrasi untuk mengendalikan urutan kerja 4 perangkat/alat secara otomatis dan presisi.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs bg-rbalt-dark text-slate-300 px-2.5 py-1 rounded border border-slate-700">CX-Programmer</span>
+                            <span class="text-xs bg-rbalt-dark text-slate-300 px-2.5 py-1 rounded border border-slate-700">PLC</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-rbalt-navy rounded-xl border border-slate-800 p-6 flex flex-col justify-between hover:border-rbalt-red transition">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-xs font-black px-2.5 py-1 bg-rbalt-red text-white uppercase tracking-wider rounded">Kontrol</span>
+                            <i data-lucide="traffic-cone" class="w-5 h-5 text-rbalt-gold"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Simulasi Lampu Lalu Lintas</h3>
+                        <p class="text-sm text-slate-300 mb-4 leading-relaxed">
+                            Pemrograman siklus lampu penyeberangan/perempatan (Merah, Kuning, Hijau) menggunakan logika timer berbasis mikrokontroler.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs bg-rbalt-dark text-slate-300 px-2.5 py-1 rounded border border-slate-700">Arduino Uno</span>
+                            <span class="text-xs bg-rbalt-dark text-slate-300 px-2.5 py-1 rounded border border-slate-700">C++</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="bg-rbalt-navy rounded-xl border border-slate-800 p-6 flex flex-col justify-between hover:border-rbalt-red transition">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-xs font-black px-2.5 py-1 bg-rbalt-red text-white uppercase tracking-wider rounded">Hardware</span>
+                            <i data-lucide="zap" class="w-5 h-5 text-rbalt-gold"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Rangkaian Lampu Flip-Flop PCB</h3>
+                        <p class="text-sm text-slate-300 mb-4 leading-relaxed">
+                            Fabrikasi dan perancangan fisik papan sirkuit (PCB) astable multivibrator lengkap dengan proses penyolderan komponen aktif & pasif.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs bg-rbalt-dark text-slate-300 px-2.5 py-1 rounded border border-slate-700">Desain PCB</span>
+                            <span class="text-xs bg-rbalt-dark text-slate-300 px-2.5 py-1 rounded border border-slate-700">Soldering</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience" class="py-20 bg-rbalt-navy border-t border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-12">
+                <div class="inline-flex items-center gap-2 text-rbalt-gold font-bold text-xs uppercase tracking-widest mb-2">
+                    <i data-lucide="award" class="w-4 h-4"></i> Milestones
+                </div>
+                <h2 class="text-3xl font-black text-white uppercase tracking-tight">Jejak Akademis & Pengalaman</h2>
+            </div>
+
+            <div class="relative border-l-2 border-rbalt-red ml-4 space-y-8">
+                <div class="relative pl-6">
+                    <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-rbalt-gold border-4 border-rbalt-navy"></div>
+                    <span class="text-xs font-bold text-rbalt-gold">2024 - SEKARANG</span>
+                    <h3 class="text-lg font-bold text-white">Mahasiswa Teknik Otomasi & Kontrol</h3>
+                    <p class="text-sm text-slate-300">Universitas Gadjah Mada (UGM)</p>
+                </div>
+                <div class="relative pl-6">
+                    <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-slate-500 border-4 border-rbalt-navy"></div>
+                    <span class="text-xs font-bold text-slate-400">2023</span>
+                    <h3 class="text-lg font-bold text-white">Pengembangan Prototipe Robot & Sistem Sederhana</h3>
+                    <p class="text-sm text-slate-300">Pembuatan Mobil Pemadam Kebakaran & Rangkaian Elektronika PCB</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-20 bg-rbalt-dark border-t border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <div class="inline-flex items-center gap-2 text-rbalt-gold font-bold text-xs uppercase tracking-widest mb-2">
+                        <i data-lucide="send" class="w-4 h-4"></i> Get In Touch
+                    </div>
+                    <h2 class="text-3xl font-black text-white uppercase tracking-tight mb-4">Mari Berkolaborasi</h2>
+                    <p class="text-slate-300 text-sm mb-6 leading-relaxed">
+                        Terbuka untuk diskusi akademis, kolaborasi proyek teknik otomasi, atau kesempatan belajar bersama.
+                    </p>
+                    <div class="space-y-3 text-sm text-slate-300 font-mono">
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded bg-rbalt-navy text-rbalt-red flex items-center justify-center font-bold">@</div>
+                            <span>fazli.shafiq@mail.ugm.ac.id</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded bg-rbalt-navy text-rbalt-gold flex items-center justify-center font-bold">#</div>
+                            <span>Yogyakarta, Indonesia</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-rbalt-navy p-6 rounded-xl border border-slate-800">
+                    <form onsubmit="event.preventDefault(); alert('Pesan berhasil dikirim!');" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-300 uppercase mb-1">Nama</label>
+                            <input type="text" required class="w-full px-3 py-2 bg-rbalt-dark border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-rbalt-red">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-300 uppercase mb-1">Email</label>
+                            <input type="email" required class="w-full px-3 py-2 bg-rbalt-dark border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-rbalt-red">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-300 uppercase mb-1">Pesan</label>
+                            <textarea rows="4" required class="w-full px-3 py-2 bg-rbalt-dark border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-rbalt-red"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-rbalt-red hover:bg-red-700 text-white font-bold py-2.5 rounded text-sm transition uppercase tracking-wider shadow-lg">
+                            Kirim Pesan
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-rbalt-navy text-slate-500 py-8 border-t border-slate-800 text-xs font-mono">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <p>© 2024 Fazli Shafiq Zulfakar. #1 Automation UGM.</p>
+            <a href="#hero" class="text-rbalt-gold hover:underline">TOP ↑</a>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+    </script>
+</body>
+</html>
